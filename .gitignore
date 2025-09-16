@@ -14,6 +14,8 @@ migrations/**/__pycache__/
 venv/
 .env/
 env/
+rtchaenv/
+.rtchaenv/
 
 # Environment variables and secrets
 .env
