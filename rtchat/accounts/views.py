@@ -13,23 +13,30 @@ from rest_framework.views import APIView
 def accounts(request):
     return Response("Accounts",status=status.HTTP_200_OK)
 
-class login(APIView):
+class login(APIView): #Login (View)controller
     def get(self,request):
+
+        auth.post()
         return Response("Login",status=status.HTTP_200_OK)
     
     def post(self,request):
         return Response()
 
-class signup(APIView):
+class auth(APIView): #Auth (View)controller
     def get(self,request):
+        return Response("Auth",status=status.HTTP_200_OK)
+    def post(self,request):
+        
+        return Response()
+    
+class signup(APIView): #Signup (View)controller
+    def get(self,request):
+        
         return Response("Signup",status=status.HTTP_200_OK)
     
     def post(self,request):
         return Response()
 
-class profile(APIView):
-    def get(self,request):
-        return Response("Profile",status=status.HTTP_200_OK)
-    
+class profile(APIView): #Profile (View)controller
     def get(self,request,id):
         return Response({"Profile": "with id " + str(id)},status=status.HTTP_200_OK)

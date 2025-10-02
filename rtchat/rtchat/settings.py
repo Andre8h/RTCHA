@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'chat',
     'accounts',
-    'Groups'
+    'Groups',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'rtchat.urls'
 
